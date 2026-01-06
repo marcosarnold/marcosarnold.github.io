@@ -1,0 +1,140 @@
+/* =========================
+   MEDIA QUERIES
+========================= */
+
+/* Small devices <600px */
+@media (max-width: 600px) {
+
+    /* =========================
+       HEADER
+    ========================= */
+    .header-container {
+      flex-direction: column;
+      align-items: flex-start; /* align with About text left edge */
+      gap: 0.5rem;
+    }
+  
+    .nav-links {
+      flex-direction: column;
+      gap: 0.75rem;
+      justify-content: flex-start;
+    }
+  
+    /* Stack social links vertically or hide on small screens */
+    .social-links {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.5rem;
+    }
+  
+    .social-link span {
+      font-size: 0.85rem;
+    }
+  
+    /* =========================
+       ABOUT SECTION
+    ========================= */
+    .page-content {
+      flex-direction: column;
+      gap: 2rem;
+    }
+  
+    .about-text-container {
+      max-width: 100%;
+    }
+  
+    .about-image {
+      position: relative;
+      width: 100%;
+      top: 0;
+      right: 0;
+      text-align: center;
+      margin: 0 auto;
+    }
+  
+    .about-image img {
+      width: 60%;
+      margin: 0 auto;
+    }
+  
+    /* =========================
+       FOOTER
+    ========================= */
+    .footer-social-links {
+      flex-direction: column;
+      align-items: center;
+      gap: 0.5rem;
+    }
+  
+    .footer-social-links li a.social-link span {
+      font-size: 0.85rem;
+    }
+  }
+  
+  /* Medium devices 601px - 1200px */
+  @media (min-width: 601px) and (max-width: 1200px) {
+  
+    /* Header */
+    .header-container {
+      flex-direction: row;
+      align-items: center;
+    }
+  
+    .nav-links {
+      gap: 1rem;
+    }
+  
+    .social-links {
+      gap: 1rem;
+      display: flex;
+    }
+  
+    /* About Section */
+    .page-content {
+      flex-direction: row;
+    }
+  
+    .about-image {
+      width: 25%;
+      top: 2rem;
+      right: 2rem;
+    }
+  }
+  
+  /* Large devices ≥1400px */
+  @media (min-width: 1400px) {
+  
+    /* Header max-width */
+    .header-container {
+      max-width: 1200px;
+    }
+  
+    .nav-links a {
+      font-size: 1.1rem;
+    }
+  
+    .social-link span {
+      font-size: 1rem;
+    }
+  
+    /* About Section */
+    .page-content {
+      max-width: 1200px;
+    }
+  
+    .about-image {
+      width: 20%;
+      top: 4rem;
+      right: 7rem;
+    }
+  
+    /* Footer meta */
+    .footer-meta {
+      font-size: 0.9rem;
+    }
+  
+    .footer-social-links li a.social-link span {
+      font-size: 1rem;
+    }
+  }
+  
