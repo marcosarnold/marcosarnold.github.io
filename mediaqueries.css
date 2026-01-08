@@ -51,4 +51,32 @@
   .header-container .social-links {
     display: none;
   }
+
+  /*ABOUT SECTION*/
+  /* ABOUT SECTION - Mobile / Small Screens */
+.page-content {
+  flex-direction: column; /* stack text + image vertically */
+  gap: 1.5rem;            /* space between text and image */
+  padding-left: 1.2rem;   /* add more space from left edge */
+  padding-right: 1.2rem;  /* add more space from right edge */
+}
+
+.about-text-container {
+  max-width: 100%;        /* let text take full width */
+}
+
+.about-image {
+  position: static;       /* remove absolute positioning */
+  width: 100%;            /* take full width */
+  margin-top: 1.5rem;     /* spacing under text */
+  display: flex;
+  justify-content: center;
+}
+
+.about-image img {
+  width: 80%;             /* scale image nicely on mobile */
+  max-width: 400px;       /* optional: prevent image from getting too huge on large phones */
+  height: auto;
+}
+
 }

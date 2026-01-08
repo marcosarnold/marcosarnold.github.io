@@ -116,14 +116,13 @@
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
-    gap: 40px;
+    gap: 4rem; /* controls distance between text and image */
     max-width: 900px;
     margin: 0 auto;
   }
   
   .about-text-container {
     flex: 1;
-    max-width: 80%;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -142,14 +141,14 @@
     color: #1a1f22;
   }
   
-  .about-image {
-    position: absolute;
-    top: 4rem;
-    right: 7rem;
-    width: 20%;
-    z-index: 1;
-  }
-  
+    /* About image default: right side */
+    .about-image {
+      position: relative; /* no absolute positioning */
+      width: 26%;
+      border-radius: 12px;
+    }
+
+  /* Image styling */
   .about-image img {
     width: 100%;
     height: auto;
