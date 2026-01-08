@@ -155,6 +155,177 @@
     border-radius: 12px;
   }
   
+
+/* =========================
+   WORK SECTION
+   ========================= */
+
+   .work-section {
+    max-width: 900px;        /* matches header nav width */
+    margin: 0 auto;
+    padding: 4rem 0;
+  }
+  
+  .work-title {
+    font-family: 'Poppins', system-ui, sans-serif !important;
+    font-size: 3.5rem;
+    font-weight: 800;
+    margin-bottom: 2.25rem;
+    color: #5f8598;
+  }
+  
+  /* Each Work Item: flex row, logo left, text right */
+  .work-item {
+    display: flex;
+    align-items: flex-start;  /* top aligns text with logo */
+    gap: 1rem;                /* space between logo and text */
+    margin-bottom: 2rem;
+  }
+  
+  /* Logo container */
+  .work-image {
+    flex: 0 0 48px;          /* fixed logo width */
+  }
+  
+  .work-image img {
+    width: 48px;
+    height: auto;
+    display: block;
+  }
+  
+  /* Text content */
+  .work-content {
+    flex: 1;                  /* take remaining width */
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Header row: company name + role/date */
+  .work-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+  
+  /* Company name */
+  .work-name {
+    font-family: 'Poppins', system-ui, sans-serif !important;
+    font-weight: 700;
+    font-size: 1.15rem;
+    color: #2f4f5d;
+    text-decoration: none;
+  }
+  
+  .work-name:hover {
+    text-decoration: underline;
+  }
+  
+  /* Role + date */
+  .work-meta {
+    font-size: 1.05rem;
+    color: #000000;
+    font-weight: 400;
+    white-space: nowrap;
+    font-family: 'IBM Plex Sans', system-ui, sans-serif !important;
+  }
+  
+  /* Description below header */
+  .work-description {
+    margin-top: 1rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #454a4e;
+    font-weight: 300;
+    font-family: 'IBM Plex Sans', system-ui, sans-serif !important;
+  }
+
+
+  /* =========================
+   PROJECTS SECTION
+   ========================= */
+
+   .project-title {
+    font-family: 'Poppins', system-ui, sans-serif !important;
+    font-size: 3.5rem;
+    font-weight: 800;
+    margin-bottom: 0.75rem;
+    color: #5f8598;
+  }
+   .project-section-description {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    font-weight: 400;
+  }
+
+  .projects-section {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0.75rem 1rem 2rem 1rem;
+  }
+  
+  .project-item {
+    display: grid;
+    grid-template-columns: 64px 1fr;
+    column-gap: 1.25rem;
+    margin-bottom: 3rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1); 
+  }
+  
+  .project-image {
+    position: relative;
+  }
+
+  .project-image img {
+    width: 48px;
+    height: auto;
+    border-radius: 6px;
+    transition: transform 0.25s ease;
+    z-index: 1;
+  }
+
+  .project-image a:hover img {
+    transform: scale(3.0);
+    z-index: 10;
+  }
+  
+  .project-content {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .project-name {
+    font-weight: 600;
+    font-size: 1.6rem;
+    text-decoration: none; /* underline comes from highlight-link background */
+    color: #032f1a;
+  }
+  
+  .project-description {
+    font-size: 0.90rem;
+    font-weight: 200;
+    line-height: 1.5;
+    color: #585858;
+  }
+
+  .project-links {
+    display: flex;
+    gap: 1rem;
+    margin-top: 0.6rem;
+    color: #5f8598;
+  }
+
+  .project-header {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #333;       /* soft accent color */
+    margin-bottom: 0.5rem;
+    text-align: left;     /* aligns with project name */
+  }
+  
+
+  
+ 
   /* =========================
      HIGHLIGHT LINKS
   ========================= */
