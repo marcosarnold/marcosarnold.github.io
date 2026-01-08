@@ -29,64 +29,80 @@
     --space-5: 6rem;
   }
   
+
   /* =========================
-     HEADER
-  ========================= */
-  .header-ribbon {
-    width: 100%;
-    background-color: var(--color-bg);
-    padding: var(--space-2) 0;
-  }
-  
-  .header-container {
-    max-width: 900px;
-    padding: 0 var(--space-2);
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 1rem;
-  }
-  
-  .nav-links {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1.5rem;
-    align-items: center;
-  }
-  
-  .nav-links a {
-    text-decoration: none;
-    color: #032f1a;
-    font-weight: 500;
-  }
-  
-  .nav-links a.home-link {
-    font-weight: 900;
-  }
-  
-  .social-links {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    flex-wrap: wrap;
-  }
-  
-  .social-link {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.25rem;
-  }
-  
-  .social-link img {
-    width: 24px;
-    height: 24px;
-  }
-  
-  .social-link span {
-    font-size: 0.9rem;
-    color: #032f1a;
-  }
+   HEADER RIBBON
+========================= */
+
+.header-ribbon {
+  width: 100%;
+  background-color: var(--color-bg);
+  font-family: var(--font-body);
+}
+
+/* shared alignment container */
+.header-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: var(--space-3) var(--space-2);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-2);
+}
+
+/* left nav */
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 1.75rem;
+  flex-wrap: wrap;
+}
+
+/* name */
+.nav-links .home-link {
+  font-weight: 900;
+  color: #5d5f61;
+  text-decoration: none;
+}
+
+/* other nav links */
+.nav-links a:not(.home-link) {
+  font-weight: 400;
+  color: #5d5f61;
+  text-decoration: none;
+}
+
+/* right social links */
+.social-links {
+  display: flex;
+  align-items: center;
+  gap: 1.75rem;
+  flex-wrap: wrap;
+}
+
+/* social link layout */
+.social-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35em;
+  text-decoration: none;
+  color: #5d5f61;
+  font-weight: 400;
+}
+
+/* icon sizing */
+.social-link img {
+  width: 0.95em;
+  height: 0.95em;
+  display: block;
+}
+
+/* hover states */
+.header-ribbon a:hover {
+  text-decoration: underline;
+}
+
   
   /* =========================
      ABOUT SECTION
@@ -165,11 +181,11 @@
   ========================= */
   .footer-ribbon {
     width: 100%;
-    background-color: var(--color-bg);
+    background-color: #ecf0ec;
     text-align: center;
     padding: var(--space-3) var(--space-2);
     font-family: 'IBM Plex Sans', sans-serif;
-    color: #032f1a;
+    color: #111;
   }
   
   .footer-social-links {
