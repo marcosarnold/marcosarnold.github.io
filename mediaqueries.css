@@ -20,6 +20,10 @@
   .project-description {
     font-size: 0.95rem;
   }
+
+  .contact-text-container {
+    max-width: 85%;
+  }
 }
 
 
@@ -74,6 +78,15 @@
 
   .project-name {
     font-size: 1.4rem;
+  }
+
+  .contact-text-container {
+    max-width: 100%;
+  }
+
+  .contact-text,
+  .contact-links a {
+    font-size: 1.15rem;
   }
 }
 
@@ -256,6 +269,26 @@
     font-size: 0.9rem;
     text-align: left;        /* left-aligned */
     }
-    
 
+    .contact-section {
+      padding: 2.5rem 1.2rem 3rem 1.2rem;
+    }
+  
+    .contact-text {
+      font-size: 1rem;
+      line-height: 1.5;
+    }
+  
+    .contact-links {
+      padding-left: 1.25rem;
+    }
+  
+    .contact-links a {
+      font-size: 1rem;
+    }
+  
+    .contact-icon {
+      width: 16px;
+      height: 16px;
+    }
 }
