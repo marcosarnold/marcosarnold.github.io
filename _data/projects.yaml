@@ -1,0 +1,50 @@
+projects:
+  - title: "Hue Hero"
+    subtitle: "Desktop color-by-number pixel art game that converts images into interactive grids and tracks user progress via a SQL database."
+    year: 2025
+    frameworks: '<p style="color:#888;">Java, Swing, SQL, Image Processing</p>'
+    selected: n
+    image: "assets/projects/hue-hero.png"
+    code: "https://github.com/marcosarnold/hue-hero"
+
+  - title: "Twitter Community Detection"
+    subtitle: "Exploration of large-scale Twitter networks to identify political communities and information flow patterns using Leiden and Infomap algorithms."
+    year: 2025
+    frameworks: '<p style="color:#888;">Python, NetworkX, Pandas, Leiden, Infomap</p>'
+    selected: n
+    image: "assets/projects/2025-twitter-detection/thumbnail.png"
+    code: "https://github.com/marcosarnold/twitter-community-detection"
+
+  - title: "Snake AI"
+    subtitle: "AI-powered Snake game implementing Greedy, Dijkstra, and A* pathfinding algorithms for optimized real-time navigation in dynamic environments."
+    year: 2025
+    frameworks: '<p style="color:#888;">Python, Pygame, NumPy, Matplotlib, Jupyter Notebook</p>'
+    selected: n
+    image: "assets/projects/snake.png"
+    code: "https://github.com/marcosarnold/snake-game-ai"
+
+  - title: "CashCow"
+    subtitle: "AI-powered Chrome extension that detects checkout pages, classifies merchants in real time using Fetch.AI and Anthropic Claude, and recommends the optimal credit card using real reward data from BrightData."
+    year: 2025
+    frameworks: '<p style="color:#888;">React, TypeScript, Fetch.AI, FastAPI, BrightData MCP, Anthropic Claude</p>'
+    selected: n
+    image: "assets/projects/cash-cow.png"
+    code: "https://github.com/marcosarnold/cash-cow"
+    website: "https://devpost.com/software/harmony-kv2zrt"
+
+  - title: "Pikes Peak Hill Climb"
+    subtitle: "3D simulator of the Pikes Peak Hill Climb using Three.js and modular ES6 architecture, recreating the iconic Colorado Rocky Mountains and Red Rocks."
+    year: 2025
+    frameworks: '<p style="color:#888;">Three.js, JavaScript, HTML, CSS, Modular ES6</p>'
+    selected: n
+    image: "assets/projects/pikes-peak.png"
+    code: "https://github.com/marcosarnold/pikes-peak-hill-climb"
+    website: "https://pikespeakhillclimb.com/"
+
+  - title: "Spotify Sentiment Analyzer"
+    subtitle: "Interactive web application that analyzes the emotional tone of songs and albums using Spotify metadata, lyrics, and a Hugging Face transformer-based sentiment model."
+    year: 2025
+    frameworks: '<p style="color:#888;">Python, Streamlit, Spotipy, lyricsgenius, Hugging Face Transformers, BERT multilingual model</p>'
+    selected: n
+    image: "assets/projects/2025-spotify-sentiment/thumbnail.png"
+    code: "https://github.com/marcosarnold/sentence-sentiment-analyzer"

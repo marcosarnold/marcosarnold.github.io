@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta charset="utf-8">
+    <title>{{ site.data.main_info.name }}</title>
+    <meta name="description" content="Homepage of Marcos Arnold">
+    <meta name="author" content="Marcos Arnold">
+
+    <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link href='https://fonts.googleapis.com/css?family=Raleway:400,300,600'
+      rel='stylesheet' type='text/css'>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet">
+
+    <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="stylesheet" href={{ "/libs/external/skeleton/normalize.css" |
+      prepend: site.baseurl }}>
+    <link rel="stylesheet" href={{ "/libs/external/skeleton/skeleton.css" |
+      prepend: site.baseurl }}>
+    <link rel="stylesheet" href={{ "/libs/custom/my_css.css" | prepend:
+      site.baseurl }}>
+
+    <!-- JQuery
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <script src={{ "/libs/external/jquery-3.1.1.min.js" | prepend: site.baseurl
+      }}></script>
+
+    <!-- Font-Awesome
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="stylesheet" href={{
+      "/libs/external/font-awesome-4.7.0/css/font-awesome.min.css" | prepend:
+      site.baseurl }}>
+
+    <!-- Academicons
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="stylesheet" href={{
+      "/libs/external/academicons-1.8.6/css/academicons.min.css" | prepend:
+      site.baseurl }}>
+
+    <!-- Skeleton tabs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="stylesheet" href={{
+      "/libs/external/skeleton_tabs/skeleton-tabs.css" | prepend: site.baseurl
+      }}>
+    <script src={{ "/libs/external/skeleton_tabs/skeleton-tabs.js" | prepend:
+      site.baseurl }}></script>
+
+    <!-- Timeline
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="stylesheet" href={{ "/libs/external/timeline.css" | prepend:
+      site.baseurl }}>
+
+    <!-- Scripts
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <!--<link rel="stylesheet" href={{ "/libs/external/github-prettify-theme.css" | prepend: site.baseurl }}>-->
+    <script src={{ "/libs/custom/my_js.js" | prepend: site.baseurl }}></script>
+
+    <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="shortcut icon" type="image/png"
+      href=/assets/website-logo/panda-bear.png>
+
+    <!-- Inline Styles for Smooth Scrolling and Active Link -->
+    <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    section {
+      scroll-margin-top: 80px;
+    }
+    .navbar-link.active {
+      color: #3498db;
+      font-weight: bold;
+      transition: color 0.3s ease-in-out;
+    }
+    .navbar-spacer {
+      height: 20px;
+    }
+  </style>
+  </head>
+  <body>
+
+    <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <div class="container">
+
+      <section class="header">
+        <div class="row">
+          <div class="four columns">
+            <a href="{{ site.baseurl }}/"><img class="u-max-full-width"
+                src='{{ site.baseurl }}{{ site.data.main_info.profile_pic }}'
+                style="max-width: 225px;"></a>
+          </div>
+          <div class="six columns main-description">
+            <h1>{{ site.data.main_info.name }}</h1>
+            <p>{{ site.data.main_info.title }}</p>
+            <p>{{ site.data.main_info.email }}</p>
+            <div class="paper-buttons">
+              <a class="button" href="mailto:{{ site.data.main_info.email }}"
+                target="_blank">
+                <i class="fa fa-envelope"
+                  aria-hidden="true"></i><span>Email</span>
+              </a>
+
+              <a class="button" href="{{ site.data.main_info.github }}"
+                target="_blank">
+                <i class="fa fa-github"
+                  aria-hidden="true"></i><span>Github</span>
+              </a>
+
+              <a class="button"
+                href="{{ site.data.main_info.linkedin }}"
+                target="_blank">
+                <i class="fa fa-linkedin-square"
+                  aria-hidden="true"></i><span>Linkedin</span>
+              </a>
+
+              <a class="button" href="{{ site.data.main_info.cv }}"
+              target="_blank">
+              <i class="fa fa-file"
+                aria-hidden="true"></i><span>Résumé</span>
+            </a>
+
+              <a class="button"
+                href="https://www.hsf.net/"
+                target="_blank">
+                <i class="fa fa-semantic-scholar-square"
+                  aria-hidden="true"></i><span>HSF Scholar</span>
+              </a>
+
+              <a class="button"
+                href="https://www.colorstack.org/"
+                target="_blank">
+                <i class="fa fa-semantic-scholar-square"
+                  aria-hidden="true"></i><span>Colorstack</span>
+              </a>
+
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="navbar-spacer"></div>
+      <nav class="navbar">
+        <div class="container">
+          <ul class="navbar-list">
+            <li class="navbar-item"><a class="navbar-link" href={{
+                "/index.html#about" | prepend: site.baseurl }}>Bio</a></li>
+            <li class="navbar-item"><a class="navbar-link" href={{
+                "/index.html#projects" | prepend: site.baseurl
+                }}>Projects</a></li>
+            <li class="navbar-item"><a class="navbar-link" href={{
+                "/index.html#resume" | prepend: site.baseurl }}>Experiences</a></li>
+          </ul>
+        </nav>
+
+        {{ content}}
+
+        <div class="footer">
+          <div class="row">
+            <div class="four columns">
+              {{ site.data.main_info.name }}
+            </div>
+            <div class="four columns">
+              Last updated on {{ site.time | date: "%B %d, %Y" }}
+            </div>
+
+            <!-- Inline JS for Last Updated Date and Smooth Scrolling -->
+            <script>
+
+
+          // Smooth Scrolling with Offset and Active Link Highlight
+          // ----- Scroll‑spy for navbar ------------------------------------------
+const navLinks = document.querySelectorAll('.navbar-link');
+const sections  = [...navLinks].map(link => {
+  const url = new URL(link.getAttribute('href'), window.location.href);
+  return document.getElementById(url.hash.substring(1));
+});
+
+function setActive(idx){
+  navLinks.forEach(l => l.classList.remove('active'));
+  if (idx >= 0) navLinks[idx].classList.add('active');
+}
+
+function onScroll(){
+  const scrollPos = window.scrollY + 90;          // 90 px ≈ navbar + margin
+  let current = sections.findIndex((sec, i) =>
+    scrollPos < (sections[i+1]?.offsetTop || Infinity));
+  setActive(current);
+}
+
+window.addEventListener('scroll', onScroll);
+onScroll();                                       // run once on load
+
+        </script>
+
+            <div class="four columns">
+              <!-- <span onclick="window.open('{{ site.data.main_info.twitter }}')" style="cursor: pointer">
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+          </span> -->
+              <span onclick="window.open('{{ site.data.main_info.cv }}')"
+                style="cursor: pointer">
+                <i class="fa fa-file" aria-hidden="true"></i>
+              </span>
+              <!--          <span onclick="window.open('{{ site.data.main_info.semantic_scholar }}')" style="cursor: pointer">-->
+              <!--            <i class="ai ai-semantic-scholar-square" aria-hidden="true"></i>-->
+              <!--          </span>-->
+              <!--          <span onclick="window.open('{{ site.data.main_info.google_scholar }}')" style="cursor: pointer">-->
+              <!--            <i class="ai ai-google-scholar-square" aria-hidden="true"></i>-->
+            </span>
+            <span onclick="window.open('{{ site.data.main_info.linkedin }}')"
+              style="cursor: pointer">
+              <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+            </span>
+            <span onclick="window.open('{{ site.data.main_info.github }}')"
+              style="cursor: pointer">
+              <i class="fa fa-github" aria-hidden="true"></i>
+            </span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Google Analytics -->
+    {% include google_analytics.html %}
+
+    <!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  </body>
+</html>
