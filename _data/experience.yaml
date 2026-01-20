@@ -37,13 +37,11 @@ experiences:
   - place: "Discover"
     time: "Aug. 2020 - May 2023"
     title: "CRM Intern"
-    subtitle: "Handled subpoenas & emails"
     category: "left"
     image: "assets/experiences/discover.png"
 
   - place: "AbbVie Inc."
     time: "Aug. 2019 - May 2020"
     title: "Finance Intern"
-    subtitle: "Supported purchase orders"
     category: "right"
     image: "assets/experiences/abbvie.png"
