@@ -12,7 +12,7 @@ projects:
     year: 2025
     frameworks: '<p style="color:#888;">Python, NetworkX, Pandas, Leiden, Infomap</p>'
     selected: n
-    image: "assets/projects/2025-twitter-detection/thumbnail.png"
+    image: "assets/projects/twitter-clusters.png"
     code: "https://github.com/marcosarnold/twitter-community-detection"
 
   - title: "Snake AI"
@@ -46,5 +46,5 @@ projects:
     year: 2025
     frameworks: '<p style="color:#888;">Python, Streamlit, Spotipy, lyricsgenius, Hugging Face Transformers, BERT multilingual model</p>'
     selected: n
-    image: "assets/projects/2025-spotify-sentiment/thumbnail.png"
+    image: "assets/projects/spotify-lyrics-analyzer.png"
     code: "https://github.com/marcosarnold/sentence-sentiment-analyzer"
