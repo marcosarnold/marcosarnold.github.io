@@ -28,7 +28,7 @@ projects:
     year: 2025
     frameworks: '<p style="color:#888;">React, TypeScript, Fetch.AI, FastAPI, BrightData MCP, Anthropic Claude</p>'
     selected: n
-    image: "assets/projects/cash-cow.png"
+    image: "assets/projects/cash-cow2.png"
     code: "https://github.com/marcosarnold/cash-cow"
     website: "https://devpost.com/software/harmony-kv2zrt"
 
