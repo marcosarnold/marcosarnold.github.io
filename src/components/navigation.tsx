@@ -11,9 +11,6 @@ import { cn } from "@/lib/utils";
 const navigation = [
   { name: "Home", href: "/" },
   { name: "Projects", href: "/projects" },
-  { name: "Media", href: "/media" },
-  { name: "Blog", href: "/blog" },
-  { name: "Photography", href: "/photography" },
 ];
 
 export function Navigation() {
@@ -29,7 +26,7 @@ export function Navigation() {
           className="group -m-1.5 p-1.5 text-xl font-semibold tracking-tight transition-all duration-300 hover:tracking-wide"
         >
           <span className="bg-gradient-to-r from-foreground via-primary to-foreground bg-[length:200%_100%] bg-clip-text transition-all duration-500 group-hover:bg-[position:100%_0] group-hover:text-transparent">
-            Ben Aguirre
+            Marcos Arnold
           </span>
         </Link>
 
@@ -88,7 +85,7 @@ export function Navigation() {
             {/* Social Links for Mobile */}
             <div className="space-y-2 pt-4 border-t">
               <Link
-                href="mailto:baguirre@luc.edu"
+                href="mailto:arnoldmarcos9@gmail.com"
                 className="flex items-center rounded-lg px-3 py-2 text-base font-semibold leading-7 text-muted-foreground transition-colors hover:bg-muted hover:text-foreground"
                 onClick={() => setMobileMenuOpen(false)}
               >

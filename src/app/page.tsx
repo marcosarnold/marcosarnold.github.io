@@ -5,8 +5,10 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import {
   ChevronDown,
-  Code,
+  Sparkles,
   FileText,
+  ChefHat,
+  ScissorsLineDashed,
   Terminal,
   Globe,
   Linkedin,
@@ -37,25 +39,27 @@ export default function HomePage() {
         <div>
           <div className="prose prose-lg max-w-none">
             <h2 className="text-3xl font-medium tracking-tight text-foreground mb-4">
-              Ben A
+              marcos arnold!
             </h2>
             <p className="text-muted-foreground text-base leading-relaxed">
-              Building, learning, and living!<br></br> You should check out my
-              favorite pages:{" "}
+              Building, learning, and crafting!
+            </p>
+            {/* <p className="text-muted-foreground text-base leading-relaxed">
+              You should check out my favorite pages:{" "}
+              <Link
+                href="/blog"
+                className="text-primary hover:text-primary/80 transition-colors"
+              >
+                Weaving{" "}
+              </Link>
+              or{" "}
               <Link
                 href="/photography"
                 className="text-primary hover:text-primary/80 transition-colors"
               >
-                Photography{" "}
+                Puzzles
               </Link>
-              or{" "}
-              <Link
-                href="/media"
-                className="text-primary hover:text-primary/80 transition-colors"
-              >
-                Media
-              </Link>
-            </p>
+            </p> */}
 
             <div className="mt-8">
               <button
@@ -81,22 +85,22 @@ export default function HomePage() {
                   <li className="ml-2 group">
                     <div className="pb-2">
                       <span className="text-sm font-medium text-primary">
-                        Feb. 2025 - Present
+                        May 2026 - Present
                       </span>
                       <div className="flex items-center gap-2 mt-1">
                         <Image
-                          src="/images/pinterest.svg"
-                          alt="Pinterest logo"
+                          src="/images/nightshift.svg"
+                          alt="Nighshift AGI logo"
                           width={24}
                           height={24}
                           className="w-6 h-6 rounded"
                         />
                         <h4 className="text-lg font-semibold text-foreground">
-                          Pinterest | Software Engineer
+                          Nightshift AGI | Software Engineer Intern
                         </h4>
                       </div>
                       <p className="text-muted-foreground text-base leading-relaxed">
-                        Full-time SWE - Continious Integration Team
+                        Incoming Summer 2026
                       </p>
                     </div>
                   </li>
@@ -104,23 +108,25 @@ export default function HomePage() {
                   <li className="ml-2 group">
                     <div className="pb-2">
                       <span className="text-sm font-medium text-primary">
-                        May 2025 - Aug. 2025
+                        Nov. 2025 - Present
                       </span>
                       <div className="flex items-center gap-2 mt-1">
                         <Image
-                          src="/images/pinterest.svg"
-                          alt="Pinterest logo"
+                          src="/images/cc.png"
+                          alt="Colorado College Department of Math + CS logo"
                           width={24}
                           height={24}
                           className="w-6 h-6 rounded"
                         />
                         <h4 className="text-lg font-semibold text-foreground">
-                          Pinterest | Software Engineering Intern
+                          Colorado College | Undergraduate Research Assistant
                         </h4>
                       </div>
                       <p className="text-muted-foreground text-base leading-relaxed">
-                        Data Engineering Organization • Built internal chatbot
-                        tool using Langchain, Python, TypeScript, and React
+                      Conducting HCI research on accessibility and cognitive disabilities
+                        by synthesizing 15+ ACM papers and integrating Hugging Face diffusion
+                        models with Meshy APIs to generate 100+ images across 20+ prompts for
+                        accessibility focused 2D to 3D assistive object design.
                       </p>
                     </div>
                   </li>
@@ -128,24 +134,24 @@ export default function HomePage() {
                   <li className="ml-2 group">
                     <div className="pb-2">
                       <span className="text-sm font-medium text-primary">
-                        Nov. 2022 - Present
+                        Sep. 2025 - Present
                       </span>
                       <div className="flex items-center gap-2 mt-1">
                         <Image
-                          src="/images/top.png"
-                          alt="The Odin Project logo"
+                          src="/images/socc.png"
+                          alt="The Sounds of Colorado College logo"
                           width={24}
                           height={24}
                           className="w-6 h-6 rounded"
                         />
                         <h4 className="text-lg font-semibold text-foreground">
-                          The Odin Project | Open Source Contributor
+                          Sounds of Colorado College | Head Website Developer
                         </h4>
                       </div>
                       <p className="text-muted-foreground text-base leading-relaxed">
-                        Contributed to The Odin Project&apos;s curriculum by
-                        implementing lesson updates, improving docs, and
-                        reviewing PRs to support 150,000+ learners
+                      Maintaining the SOCC Radio website using WordPress, Cargo, HTML, and CSS,
+                        supporting 500+ weekly visitors by implementing content updates, multimedia
+                        integrations, and accessibility improvements.
                       </p>
                     </div>
                   </li>
@@ -153,24 +159,25 @@ export default function HomePage() {
                   <li className="ml-2 group">
                     <div className="pb-2">
                       <span className="text-sm font-medium text-primary">
-                        Oct. 2024 - Nov. 2024
+                        Jan. 2026 - Mar. 2026
                       </span>
                       <div className="flex items-center gap-2 mt-1">
                         <Image
-                          src="/images/bloomberg.png"
-                          alt="Bloomberg logo"
+                          src="/images/heyneighbor.png"
+                          alt="Hey Neighbor logo"
                           width={24}
                           height={24}
                           className="w-6 h-6 rounded"
                         />
                         <h4 className="text-lg font-semibold text-foreground">
-                          ColorStack X Bloomberg | Open Source Contributor
+                          Hey Neighbor | Data Analysis & Research Intern
                         </h4>
                       </div>
                       <p className="text-muted-foreground text-base leading-relaxed">
-                        Bloomberg X ColorStack mentorship program • Collaborated
-                        with a Bloomberg Engineer on an open-source development
-                        feature for ColorStack&apos;s Oyster project
+                      Evaluated survey data from 200+ Neighborhood University alumni across 5
+                        cohorts to evaluate civic engagement outcomes and developed 5+ actionable
+                        recommendations to strengthen accessibility, alumni networking, and
+                        community leadership initiatives in Colorado Springs.
                       </p>
                     </div>
                   </li>
@@ -178,25 +185,25 @@ export default function HomePage() {
                   <li className="ml-2 group">
                     <div className="pb-2">
                       <span className="text-sm font-medium text-primary">
-                        May 2024 - Aug. 2024
+                        May 2025 - Oct. 2025
                       </span>
                       <div className="flex items-center gap-2 mt-1">
                         <Image
-                          src="/images/atlassian.svg"
-                          alt="Atlassian logo"
+                          src="/images/cc.png"
+                          alt="Colorado College Office of Information Technology logo"
                           width={24}
                           height={24}
                           className="w-6 h-6 rounded"
                         />
                         <h4 className="text-lg font-semibold text-foreground">
-                          Atlassian | Brand Marketing Intern
+                          Colorado College | Software Engineer Intern
                         </h4>
                       </div>
                       <p className="text-muted-foreground text-base leading-relaxed">
-                        Wrote docs for the &quot;Impossible Alone&quot;
-                        campaign, created inclusive language guidance, and
-                        improved brand visibility through optimized search
-                        titles
+                      Architected a full stack Django, HTMX, and PostgreSQL application that
+                        centralized tracking for 23 institutional applications across 19
+                        business processes, managing 1K+ records while improving data
+                        integrity and reducing cross campus reporting query times by 40%.
                       </p>
                     </div>
                   </li>
@@ -204,46 +211,25 @@ export default function HomePage() {
                   <li className="ml-2 group">
                     <div className="pb-2">
                       <span className="text-sm font-medium text-primary">
-                        May 2023 - Aug. 2023
+                        May 2025
                       </span>
                       <div className="flex items-center gap-2 mt-1">
                         <Image
-                          src="/images/skillsoft.jpeg"
-                          alt="Skillsoft logo"
+                          src="/images/beats.png"
+                          alt="Beats by Dre logo"
                           width={24}
                           height={24}
                           className="w-6 h-6 rounded"
                         />
                         <h4 className="text-lg font-semibold text-foreground">
-                          Skillsoft | Digital Marketing Intern
+                          Beats by Dre | Data Analysis Externship
                         </h4>
                       </div>
                       <p className="text-muted-foreground text-base leading-relaxed">
-                        Conducted in-depth SEO research to improve keyword
-                        rankings for new and existing content. Led the launch of
-                        a new sustainability product
-                      </p>
-                    </div>
-                  </li>
-                  {/* Experience 7 */}
-                  <li className="ml-2 group">
-                    <div className="pb-2">
-                      <span className="text-sm font-medium text-primary">
-                        Aug. 2022 - Jan. 2023
-                      </span>
-                      <div className="flex items-center gap-2 mt-1">
-                        <div className="w-6 h-6 bg-accent rounded flex items-center justify-center text-accent-foreground text-xs font-bold">
-                          N
-                        </div>
-                        <h4 className="text-lg font-semibold text-foreground">
-                          NockNock | Growth and Operations Intern
-                        </h4>
-                      </div>
-                      <p className="text-muted-foreground text-base leading-relaxed">
-                        Produced 11 Instagram reels (205k+ views), grew
-                        Instagram to 5,800 followers, and built relationships
-                        with 80+ potential clients through social media
-                        engagement
+                      Analyzed 20+ Gen Z consumer survey responses using Python, Gemini AI,
+                        and Excel to identify audio preference trends, producing visualizations
+                        and insight summaries that informed marketing and product strategy
+                        recommendations for Beats by Dre.
                       </p>
                     </div>
                   </li>
@@ -252,7 +238,7 @@ export default function HomePage() {
             </div>
           </div>
         </div>
-        <div>
+        {/* <div>
           <button
             onClick={() => setIsBlogOpen(!isBlogOpen)}
             className="flex items-center gap-2 text-3xl font-medium tracking-tight text-foreground hover:text-primary transition-colors mb-4 group cursor-pointer"
@@ -280,7 +266,7 @@ export default function HomePage() {
               ))}
             </div>
           </div>
-        </div>
+        </div> */}
         <div>
           <button
             onClick={() => setIsToolsOpen(!isToolsOpen)}
@@ -301,9 +287,9 @@ export default function HomePage() {
             <div className="space-y-3 ml-2">
               <div className="group border-b border-border group-hover:border-primary/30 transition-colors pb-3">
                 <div className="flex items-center gap-2">
-                  <Code className="w-4 h-4 text-primary" />
+                  <Sparkles className="w-4 h-4 text-primary" />
                   <h3 className="text-lg font-medium text-foreground hover:text-primary transition-colors py-2">
-                    IDE: Cursor
+                    LLM: Claude
                   </h3>
                 </div>
               </div>
@@ -311,23 +297,23 @@ export default function HomePage() {
                 <div className="flex items-center gap-2">
                   <FileText className="w-4 h-4 text-primary" />
                   <h3 className="text-lg font-medium text-foreground hover:text-primary transition-colors py-2">
-                    Note taking: Obsidian
+                    Note taking: Figma
                   </h3>
                 </div>
               </div>
               <div className="group border-b border-border group-hover:border-primary/30 transition-colors pb-3">
                 <div className="flex items-center gap-2">
-                  <Terminal className="w-4 h-4 text-primary" />
+                  <ScissorsLineDashed className="w-4 h-4 text-primary" />
                   <h3 className="text-lg font-medium text-foreground hover:text-primary transition-colors py-2">
-                    Terminal: Ghostty
+                    Weaving: Tapestry Beater
                   </h3>
                 </div>
               </div>
               <div className="group border-b border-border group-hover:border-primary/30 transition-colors pb-3">
                 <div className="flex items-center gap-2">
-                  <Globe className="w-4 h-4 text-primary" />
+                  <ChefHat className="w-4 h-4 text-primary" />
                   <h3 className="text-lg font-medium text-foreground hover:text-primary transition-colors py-2">
-                    Browser: Chrome
+                    Cookware: Wok
                   </h3>
                 </div>
               </div>
@@ -338,14 +324,14 @@ export default function HomePage() {
 
       <div className="fixed bottom-6 left-6 hidden flex-col gap-3 md:flex">
         <Link
-          href="mailto:baguirre@luc.edu"
+          href="mailto:arnoldmarcos9@gmail.com"
           className="rounded-full bg-background/80 p-3 text-muted-foreground shadow-sm ring-1 ring-border transition-all hover:text-foreground hover:shadow-md"
         >
           <Mail className="h-4 w-4 transition-transform hover:scale-110" />
           <span className="sr-only">Email Ben Aguirre</span>
         </Link>
         <Link
-          href="https://www.linkedin.com/in/ben-aguirre"
+          href="https://www.linkedin.com/in/marcosarnold/"
           target="_blank"
           rel="noopener noreferrer"
           className="rounded-full bg-background/80 p-3 text-muted-foreground shadow-sm ring-1 ring-border transition-all hover:text-foreground hover:shadow-md"
@@ -354,7 +340,7 @@ export default function HomePage() {
           <span className="sr-only">LinkedIn</span>
         </Link>
         <Link
-          href="https://github.com/Baguirre03"
+          href="https://github.com/marcosarnold"
           target="_blank"
           rel="noopener noreferrer"
           className="rounded-full bg-background/80 p-3 text-muted-foreground shadow-sm ring-1 ring-border transition-all hover:text-foreground hover:shadow-md"

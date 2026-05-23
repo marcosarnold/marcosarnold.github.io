@@ -5,47 +5,47 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 const projects = [
   {
-    title: "Advent of Code 2025",
-    description: "My solutions to AOC 2025",
-    technologies: ["JavaScript", "C++", "Python"],
-    github: "https://github.com/Baguirre03/advent-of-code-2025",
-  },
-  {
-    title: "Google Calendar Events - Raycast Extension",
+    title: "Twitter Community Detection",
     description:
-      "Raycast extension that creates events using natural language for your Google Calendar in Raycast",
-    technologies: ["Google Calendar API", "TypeScript", "React"],
-    github:
-      "https://github.com/raycast/extensions/tree/6fd6ba36635a74edef87c06c5bd33049e697218e/extensions/google-calendar-quickadd/",
-    live: "https://www.raycast.com/ben_aguirre/google-calendar-quickadd",
-    showInstalls: true,
+      "Analysis of a 81,306 user Twitter network using Leiden and Infomap community detection to identify political clusters and echo chamber effects",
+    technologies: ["Python", "NetworkX", "Pandas"],
+    github: "https://github.com/marcosarnold/twitter-community-detection",
   },
   {
-    title: "Advent of Code 2024",
-    description: "My solutions to Advent of Code 2024",
-    technologies: ["JavaScript"],
-    github: "https://github.com/Baguirre03/Advent_of_code_2024",
+    title: "CashCow",
+    description: 
+      "Finance AI Chrome extension built at Cal Hacks 12.0 that detects checkout pages, classifies merchants in real time, and recommends optimal credit cards to maximize cashback and rewards using real time reward data",
+    technologies: ["React", "TypeScript", "Fetch.AI API", "FastAPI", "BrightData MCP", "Anthropic API"],
+    github: "https://github.com/marcosarnold/cash-cow",
   },
   {
-    title: "Old Portfolio",
-    description: "My old portfolio!",
-    technologies: ["React", "JavaScript", "Tailwind CSS"],
-    github: "https://github.com/Baguirre03/portfolio2/tree/main",
-    live: "https://benaguirre.netlify.app/",
-  },
-  {
-    title: "Advent of Code 2023",
-    description: "My solutions to Advent of Code 2023",
-    technologies: ["JavaScript"],
-    github: "https://github.com/Baguirre03/advent-of-code",
-  },
-  {
-    title: "Full Stack Blog Project",
+    title: "Pikes Peak Hill Climb",
     description:
-      "A full stack blog project using Next.js, Tailwind CSS, Express, and MongoDB",
-    technologies: ["React", "Node.js", "Express", "MongoDB"],
-    github: "https://github.com/Baguirre03/blog",
-    live: "https://top-blog-ba.netlify.app/",
+      "Interactive 3D recreation of the Pikes Peak Hill Climb featuring a racing experience through the Colorado Rockies and Red Rocks",
+    technologies: ["JavaScript", "HTML", "CSS", "Three.js", "Modular ES6 Architecture"],
+    github: "https://github.com/marcosarnold/pikes-peak-hill-climb",
+    live: "https://pikespeakhillclimb.com/"
+  },
+  {
+    title: "Snake AI",
+    description: 
+      "Snake game implementing Greedy, Dijkstra, and A* algorithms for AI pathfinding and real time navigation",
+    technologies: ["Python", "Pygame", "Matplotlib", "Jupyter Notebook"],
+    github: "https://github.com/marcosarnold/snake-game-ai",
+  },
+  {
+    title: "Hue Hero",
+    description: 
+      "Desktop color by number pixel art game that turns images into playable grids with SQL based progress tracking",
+    technologies: ["Java", "Swing", "SQL", "Image Processing"],
+    github: "https://github.com/marcosarnold/hue-hero",
+  },
+  {
+    title: "Spotify Sentiment Analyzer",
+    description:
+      "Web application that analyzes the emotional tone of songs and albums using Spotify metadata, lyrics, and a multilingual BERT model for sentiment analysis",
+    technologies: ["Python", "Streamlit", "Hugging Face Transformers", "Spotify API"],
+    github: "https://github.com/marcosarnold/sentence-sentiment-analyzer",
   },
 ];
 

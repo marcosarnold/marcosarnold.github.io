@@ -21,9 +21,9 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Ben Aguirre",
+  title: "Marcos Arnold",
   description:
-    "Ben Aguirre's portfolio highlighting Loyola Chicago marketer-turned-software builder, featuring projects, photography, writing, and open source work",
+    "Marcos Arnold’s portfolio exploring software, geography, sociology, culture, and weaving through interactive research and creative coding.",
 };
 
 export default function RootLayout({
