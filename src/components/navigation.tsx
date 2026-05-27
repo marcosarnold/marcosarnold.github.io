@@ -4,7 +4,7 @@ import { useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Button } from "@/components/ui/button";
-import { Menu, X, Github, Linkedin, Mail } from "lucide-react";
+import { Menu, X, Github, Linkedin, Mail, FileText } from "lucide-react";
 // import { useTheme } from "next-themes";
 import { cn } from "@/lib/utils";
 
@@ -107,6 +107,16 @@ export function Navigation() {
               >
                 <Linkedin className="mr-3 h-4 w-4" />
                 LinkedIn
+              </Link>
+              <Link
+                href="/Arnold, Marcos, Resume.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center rounded-lg px-3 py-2 text-base font-semibold leading-7 text-muted-foreground transition-colors hover:bg-muted hover:text-foreground"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                <FileText className="mr-3 h-4 w-4" />
+                Résumé
               </Link>
             </div>
           </div>

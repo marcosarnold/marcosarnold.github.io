@@ -7,7 +7,7 @@ import {
   ChevronDown,
   Sparkles,
   FileText,
-  ChefHat,
+  Palette,
   ScissorsLineDashed,
   Terminal,
   Globe,
@@ -44,7 +44,7 @@ export default function HomePage() {
             <p className="text-muted-foreground text-base leading-relaxed">
               Building, learning, and crafting!
             </p>
-            {/* <p className="text-muted-foreground text-base leading-relaxed">
+            {/*<p className="text-muted-foreground text-base leading-relaxed">
               You should check out my favorite pages:{" "}
               <Link
                 href="/blog"
@@ -61,6 +61,7 @@ export default function HomePage() {
               </Link>
             </p> */}
 
+            {/* EXPERIENCES */ }
             <div className="mt-8">
               <button
                 onClick={() => setIsTimelineOpen(!isTimelineOpen)}
@@ -238,35 +239,8 @@ export default function HomePage() {
             </div>
           </div>
         </div>
-        {/* <div>
-          <button
-            onClick={() => setIsBlogOpen(!isBlogOpen)}
-            className="flex items-center gap-2 text-3xl font-medium tracking-tight text-foreground hover:text-primary transition-colors mb-4 group cursor-pointer"
-          >
-            Recent Blog Posts
-            <ChevronDown
-              className={`w-4 h-4 transition-transform duration-200 ${
-                isBlogOpen ? "rotate-180" : ""
-              }`}
-            />
-          </button>
-          <div
-            className={`overflow-hidden transition-all duration-300 ease-in-out ${
-              isBlogOpen ? "max-h-[500px] opacity-100" : "max-h-0 opacity-0"
-            }`}
-          >
-            <div className="space-y-3 ml-2 pb-3">
-              {recentPosts.map((post, index) => (
-                <BlogH1
-                  key={post.slug}
-                  title={post.title}
-                  href={`/blog/${post.slug}`}
-                  index={index == recentPosts.length - 1 ? -1 : index}
-                />
-              ))}
-            </div>
-          </div>
-        </div> */}
+
+        {/* FAVORITE/RECENT TOOLS */ }
         <div>
           <button
             onClick={() => setIsToolsOpen(!isToolsOpen)}
@@ -297,7 +271,15 @@ export default function HomePage() {
                 <div className="flex items-center gap-2">
                   <FileText className="w-4 h-4 text-primary" />
                   <h3 className="text-lg font-medium text-foreground hover:text-primary transition-colors py-2">
-                    Note taking: Figma
+                    Notes: Figma
+                  </h3>
+                </div>
+              </div>
+              <div className="group border-b border-border group-hover:border-primary/30 transition-colors pb-3">
+                <div className="flex items-center gap-2">
+                  <Palette className="w-4 h-4 text-primary" />
+                  <h3 className="text-lg font-medium text-foreground hover:text-primary transition-colors py-2">
+                    Sketchbook: p5.js
                   </h3>
                 </div>
               </div>
@@ -309,19 +291,12 @@ export default function HomePage() {
                   </h3>
                 </div>
               </div>
-              <div className="group border-b border-border group-hover:border-primary/30 transition-colors pb-3">
-                <div className="flex items-center gap-2">
-                  <ChefHat className="w-4 h-4 text-primary" />
-                  <h3 className="text-lg font-medium text-foreground hover:text-primary transition-colors py-2">
-                    Cookware: Wok
-                  </h3>
-                </div>
-              </div>
             </div>
           </div>
         </div>
       </div>
 
+      {/* SOCIAL LINKS */ }
       <div className="fixed bottom-6 left-6 hidden flex-col gap-3 md:flex">
         <Link
           href="mailto:arnoldmarcos9@gmail.com"
@@ -347,6 +322,15 @@ export default function HomePage() {
         >
           <Github className="h-4 w-4 transition-transform hover:scale-110" />
           <span className="sr-only">GitHub</span>
+        </Link>
+        <Link
+          href="/Arnold, Marcos, Resume.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="rounded-full bg-background/80 p-3 text-muted-foreground shadow-sm ring-1 ring-border transition-all hover:text-foreground hover:shadow-md"
+        >
+          <FileText className="h-4 w-4 transition-transform hover:scale-110" />
+          <span className="sr-only">Resume</span>
         </Link>
       </div>
     </>

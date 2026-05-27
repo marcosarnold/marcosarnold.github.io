@@ -1,9 +1,10 @@
-# 2025 Portfolio
+# welcome to my portfolio! tee-hee!
 
-A modern, fast personal portfolio showcasing projects, writing, and photography.
+marcos arnold' personal portfolio showcasing projects, puzzles, and weaving!
+site is based on [Ben Aguirre's portfolio](https://benaguirre.dev/)!
 
-- **Live Demo**: [https://benaguirre.dev](https://2025-portfolio-ivory-xi.vercel.app/)
-- **Author**: Ben Aguirre
+- **Live Demo**: [https://marcosarnold.github.io](https://marcosarnold.github.io/)
+- **Author**: Marcos Arnold
 
 ## Features
 
@@ -24,37 +25,4 @@ A modern, fast personal portfolio showcasing projects, writing, and photography.
 - **Images**: Next.js Image, optional `sharp`
 - **Utilities**: `date-fns`, `uuid`, `tailwind-merge`
 - **Build & Lint**: Turbopack, ESLint (next/core-web-vitals)
-- **Deployment**: Vercel
-
-## Project Structure
-
-```
-src/
-  app/
-    api/
-      photos/route.ts           # Photos API (signed URLs for private when admin)
-      recent-posts/route.ts     # Recent blog posts API
-    ...
-  components/                   # UI components (shadcn)
-  lib/
-    blog.ts                     # Markdown loading utilities
-    supabase.ts                 # Supabase client + helpers
-content/
-  blog/                         # Markdown posts (.md)
-```
-
-## Blog Authoring
-
-- Add `.md` files to `content/blog` using frontmatter:
-
-  ```md
-  ---
-  title: My New Post
-  date: 2025-09-01
-  excerpt: A short summary for previews.
-  ---
-
-  Your markdown content here.
-  ```
-
-- Commit posts to the repo. If the directory is empty, Git won’t track it; a `.gitkeep` is included.
+- **Deployment**: Github Pages
