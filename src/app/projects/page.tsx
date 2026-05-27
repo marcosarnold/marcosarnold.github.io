@@ -1,8 +1,5 @@
-"use client";
-
-import { ExternalLink, Github, Download } from "lucide-react";
+import { ExternalLink, Github } from "lucide-react";
 import Link from "next/link";
-import { useEffect, useState } from "react";
 const projects = [
   {
     title: "Twitter Community Detection",
@@ -50,16 +47,6 @@ const projects = [
 ];
 
 export default function ProjectsPage() {
-  const [raycastInstalls, setRaycastInstalls] = useState<string | null>(null);
-
-  useEffect(() => {
-    fetch("/api/raycast-installs")
-      .then((res) => res.json())
-      .then((data) => {
-        setRaycastInstalls(data.formatted);
-      });
-  }, []);
-
   return (
     <div className="mx-auto max-w-2xl px-6 pt-5 pb-16">
       <h1 className="text-3xl font-medium tracking-tight text-foreground mb-8">
@@ -113,15 +100,6 @@ export default function ProjectsPage() {
                   {tech}
                 </span>
               ))}
-              {project.showInstalls && raycastInstalls && (
-                <span
-                  onClick={() => window.open(project.live, "_blank")}
-                  className="hover:cursor-pointer flex items-center gap-1 text-xs px-2 py-0.5 rounded-full bg-primary/5 text-primary font-semibold ring-1 ring-primary/20 hover:ring-primary/30 transition-all"
-                >
-                  <Download className="h-3 w-3" />
-                  {raycastInstalls} Downloads
-                </span>
-              )}
             </div>
           </article>
         ))}
