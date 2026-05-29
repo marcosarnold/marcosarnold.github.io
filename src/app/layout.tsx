@@ -6,8 +6,6 @@ import { Suspense } from "react";
 import Script from "next/script";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
-import { QueryProvider } from "@/components/query-provider";
-import { Analytics } from "@vercel/analytics/next";
 
 const spaceGrotesk = Space_Grotesk({
   variable: "--font-geist-sans",
@@ -43,7 +41,6 @@ export default function RootLayout({
           src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"
           strategy="lazyOnload"
         />
-        <QueryProvider>
           <ThemeProvider
             attribute="class"
             defaultTheme="system"
@@ -55,8 +52,6 @@ export default function RootLayout({
               <main className="min-h-screen">{children}</main>
             </Suspense>
           </ThemeProvider>
-        </QueryProvider>
-        <Analytics></Analytics>
       </body>
     </html>
   );

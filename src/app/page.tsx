@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import {
   ChevronDown,
   Sparkles,
@@ -16,22 +16,9 @@ import {
   Mail,
   Music2,
 } from "lucide-react";
-import { BlogH1 } from "@/components/blog-h1";
-
-type RecentPost = { slug: string; title: string };
-
 export default function HomePage() {
   const [isTimelineOpen, setIsTimelineOpen] = useState(true);
-  const [isBlogOpen, setIsBlogOpen] = useState(true);
   const [isToolsOpen, setIsToolsOpen] = useState(true);
-  const [recentPosts, setRecentPosts] = useState<RecentPost[]>([]);
-
-  useEffect(() => {
-    fetch("/api/recent-posts?limit=2")
-      .then((r) => r.json())
-      .then(setRecentPosts)
-      .catch(() => setRecentPosts([]));
-  }, []);
 
   return (
     <>
