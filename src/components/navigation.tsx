@@ -11,6 +11,7 @@ import { cn } from "@/lib/utils";
 const navigation = [
   { name: "Home", href: "/" },
   { name: "Projects", href: "/projects" },
+  { name: "Résumé", href: "/Arnold, Marcos, Resume.pdf", target: "_blank" },
 ];
 
 export function Navigation() {
@@ -35,6 +36,8 @@ export function Navigation() {
             <Link
               key={item.name}
               href={item.href}
+              target={item.target}
+              rel={item.target === "_blank" ? "noopener noreferrer" : undefined}
               className={cn(
                 "text-sm font-medium leading-6 transition-colors hover:text-accent",
                 pathname === item.href
@@ -71,6 +74,8 @@ export function Navigation() {
               <Link
                 key={item.name}
                 href={item.href}
+                target={item.target}
+                rel={item.target === "_blank" ? "noopener noreferrer" : undefined}
                 className={cn(
                   "block rounded-lg px-3 py-2 text-base font-semibold leading-7 transition-colors hover:bg-muted",
                   pathname === item.href
