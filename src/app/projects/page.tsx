@@ -2,6 +2,13 @@ import { ExternalLink, Github } from "lucide-react";
 import Link from "next/link";
 const projects = [
   {
+    title: "Milkr",
+    description:
+      "CashCow, rebuilt. AI-powered Chrome extension that picks your best card at checkout",
+    technologies: ["React", "TypeScript", "FastAPI", "Plaid", "Firecrawl", "Anthropic API"],
+    github: "https://github.com/marcosarnold/milkr",
+  },
+  {
     title: "Twitter Community Detection",
     description:
       "Analysis of a 81,306 user Twitter network using Leiden and Infomap community detection to identify political clusters and echo chamber effects",
