@@ -111,10 +111,12 @@ export default function HomePage() {
                         </h4>
                       </div>
                       <p className="text-muted-foreground text-base leading-relaxed">
-                      Conducting HCI research on accessibility and cognitive disabilities
-                        by synthesizing 15+ ACM papers and integrating Hugging Face diffusion
-                        models with Meshy APIs to generate 100+ images across 20+ prompts for
-                        accessibility focused 2D to 3D assistive object design.
+                      Synthesizing 15+ ACM papers on accessibility and cognitive disabilities, 
+                        translating findings into system design requirements that inform assistive
+                        tools for neurodivergent users in collaboration with Macalester College.
+                        Integrating Hugging Face diffusion models with Meshy APIs to generate 100+
+                        images across 20+ prompts assistive object design, with evaluation through 3D
+                        printing and comparison against original text-based measurements.
                       </p>
                     </div>
                   </li>
@@ -133,13 +135,13 @@ export default function HomePage() {
                           className="w-6 h-6 rounded"
                         />
                         <h4 className="text-lg font-semibold text-foreground">
-                          Sounds of Colorado College | Head Website Developer
+                          Sounds of Colorado College | Webmaster Lead
                         </h4>
                       </div>
                       <p className="text-muted-foreground text-base leading-relaxed">
-                      Maintaining the SOCC Radio website using WordPress, Cargo, HTML, and CSS,
-                        supporting 500+ weekly visitors by implementing content updates, multimedia
-                        integrations, and accessibility improvements.
+                      Leading a 3-person team responsible for maintenance and UX improvements
+                        of SOCC Radio’s website, improving accessibility and navigation for
+                        500+ weekly users through iterative front-end updates and user feedback cycles.
                       </p>
                     </div>
                   </li>
@@ -188,10 +190,12 @@ export default function HomePage() {
                         </h4>
                       </div>
                       <p className="text-muted-foreground text-base leading-relaxed">
-                      Architected a full stack Django, HTMX, and PostgreSQL application that
-                        centralized tracking for 23 institutional applications across 19
-                        business processes, managing 1K+ records while improving data
-                        integrity and reducing cross campus reporting query times by 40%.
+                      Centralized tracking of 23 institutional applications used across 19
+                        business processes by building a full-stack Django/HTMX system,
+                        improving cross-department visibility and reducing reporting time by
+                        40%. Designed PostgreSQL database for 1K+ records, implementing many-to-many
+                        relationships across institutional entities to model complex administrative
+                        data structures.
                       </p>
                     </div>
                   </li>
