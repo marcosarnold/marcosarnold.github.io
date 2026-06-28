@@ -111,7 +111,7 @@ export default function HomePage() {
                         </h4>
                       </div>
                       <p className="text-muted-foreground text-base leading-relaxed">
-                      Synthesizing 15+ ACM papers on accessibility and cognitive disabilities, 
+                      Synthesizing 15+ ACM papers on accessibility and cognitive disabilities,
                         translating findings into system design requirements that inform assistive
                         tools for neurodivergent users in collaboration with Macalester College.
                         Integrating Hugging Face diffusion models with Meshy APIs to generate 100+

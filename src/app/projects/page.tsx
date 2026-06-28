@@ -2,10 +2,18 @@ import { ExternalLink, Github } from "lucide-react";
 import Link from "next/link";
 const projects = [
   {
+    title: "Retention",
+    description:
+      "Multi-agent system that iteratively improves educational videos by predicting brain fMRI responses with Meta's TRIBE v2, identifying low-engagement segments and generating optimized replacements",
+    technologies: ["Python", "Tribe v2", "FastAPI", "Deepgram", "Pika API", "Band AI SDK", "TokenRouter (Multi-LLM)"],
+    github: "https://github.com/marcosarnold/retention",
+    live: "https://devpost.com/software/retention?ref_content=my-projects-tab&ref_feature=my_projects"
+  },
+  {
     title: "Milkr",
     description:
       "CashCow, rebuilt. AI-powered Chrome extension that picks your best card at checkout",
-    technologies: ["React", "TypeScript", "FastAPI", "Plaid", "Firecrawl", "Anthropic API"],
+    technologies: ["Python", "React", "TypeScript", "FastAPI", "Plaid", "Firecrawl", "Anthropic API"],
     github: "https://github.com/marcosarnold/milkr",
   },
   {
