@@ -69,7 +69,30 @@ export default function HomePage() {
                 }`}
               >
                 <ol className="relative border-l border-border ml-2 pl-6 space-y-6">
-                  {/* Experience 1 */}
+                  {/* Experience 1 - PPLD */}
+                  <li className="ml-2 group">
+                    <div className="pb-2">
+                      <span className="text-sm font-medium text-primary">
+                        June 2026 - Present
+                      </span>
+                      <div className="flex items-center gap-2 mt-1">
+                        <Image
+                          src="/images/ppld.png"
+                          alt="Pikes Peak Library District logo"
+                          width={24}
+                          height={24}
+                          className="w-6 h-6 rounded"
+                        />
+                        <h4 className="text-lg font-semibold text-foreground">
+                          Pikes Peak Library District | Technology Volunteer Program
+                        </h4>
+                      </div>
+                      <p className="text-muted-foreground text-base leading-relaxed">
+                        Summer 2026
+                      </p>
+                    </div>
+                  </li>  
+                  {/* Experience 2 - Nightshift */}
                   <li className="ml-2 group">
                     <div className="pb-2">
                       <span className="text-sm font-medium text-primary">
@@ -88,11 +111,11 @@ export default function HomePage() {
                         </h4>
                       </div>
                       <p className="text-muted-foreground text-base leading-relaxed">
-                        Incoming Summer 2026
+                        Summer 2026
                       </p>
                     </div>
                   </li>
-                  {/* Experience 2 */}
+                  {/* Experience 3 */}
                   <li className="ml-2 group">
                     <div className="pb-2">
                       <span className="text-sm font-medium text-primary">
@@ -120,7 +143,7 @@ export default function HomePage() {
                       </p>
                     </div>
                   </li>
-                  {/* Experience 3 */}
+                  {/* Experience 4 */}
                   <li className="ml-2 group">
                     <div className="pb-2">
                       <span className="text-sm font-medium text-primary">
@@ -145,7 +168,7 @@ export default function HomePage() {
                       </p>
                     </div>
                   </li>
-                  {/* Experience 4 */}
+                  {/* Experience 5 */}
                   <li className="ml-2 group">
                     <div className="pb-2">
                       <span className="text-sm font-medium text-primary">
@@ -171,7 +194,7 @@ export default function HomePage() {
                       </p>
                     </div>
                   </li>
-                  {/* Experience 5 */}
+                  {/* Experience 6 */}
                   <li className="ml-2 group">
                     <div className="pb-2">
                       <span className="text-sm font-medium text-primary">
@@ -199,7 +222,7 @@ export default function HomePage() {
                       </p>
                     </div>
                   </li>
-                  {/* Experience 6 */}
+                  {/* Experience 7 */}
                   <li className="ml-2 group">
                     <div className="pb-2">
                       <span className="text-sm font-medium text-primary">
